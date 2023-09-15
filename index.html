@@ -16,26 +16,30 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
   <title>HTML Form</title>
 </head>
 <body>
-  <label for="username">User Name : </label>
-  <input type="text" name="username" id="username">
-  <br>
-  <label for="phno">PhNo</label>
-  <input type="tel" id="phno" name="phno"></input>
-  <br>
-  <label for="anime">do you watch anime: </label>
-  <input type="radio" name="watch anime?" value="yes" id="yes">
-  <label for="yes">YES</label>
-  <input type="radio" name="watch anime?" value="no" id="no" >
-  <label for="no">NO</label><br>
-  <label for="bg">Blood Group</label>
-  <select name="bg" id="bg">blood group
-  <option value="o+ve">O+ve</option>
-  <option value="A+ve">A+ve</option>
-  <option value="AB+ve">AB+ve</option>
-  <option value=">O-ve">O-ve</option>
-  <option value="A1B+ve">A1B+ve</option>
-  <label for="done">done</label>
-  <input type="checkbox"></input>
-  </select>
+  <form action="/action_page.php" id="form1" method="POST">
+    <label for="username">User Name : </label>
+    <input type="text" name="username" id="username">
+    <br>
+    <label for="phno">PhNo</label>
+    <input type="number" id="phno" name="phno"></input>
+    <br>
+    <label for="anime" >do you watch anime: </label>
+    <input type="radio" name="watch_anime" value="yes" id="yes">
+    <label for="yes">YES</label>
+    <input type="radio" name="watch anime?" value="no" id="no" >
+    <label for="no">NO</label><br>
+    <label for="bg">Blood Group</label>
+    <select name="blood_group" id="bg">blood group
+      <option value="O+ve">"O+ve"</option>
+      <option value="A+ve">"A+ve"</option>
+      <option value="AB+ve">"AB+ve"</option>
+      <option value=">O-ve">"O-ve"</option>
+      <option value="A1B+ve">"A1B+ve"</option>
+    </select>
+    <br>
+    <input value="done" type="checkbox" name="done">
+    <label for="done" >done</label><br>
+    <button type="submit" formaction="mailto:s.arunkumar567567567@gmail.com">submit</button>
+  </form>
 </body>
 </html>
